@@ -45,9 +45,9 @@
 
 ## 使用须知：
 
-1. 不支持 orcale JDK or JRE 启动的 Burp（ 可参考：https://github.com/cloud-jie/CloudX/issues/16 ）
+1. ~~不支持 orcale JDK or JRE 启动的 Burp（ 可参考：https://github.com/cloud-jie/CloudX/issues/16 ）~~ 已解决
 2. 采用 Montoya API 开发，不支持老版本 Burp，只会不断适配优化 Burp 最新版本的使用体验
-3. 非侵入式设计，当数据包进入burp时，仅解密展示明文，发送时始终保持原始密文不变。
+3. 非侵入式设计，当数据包进入burp时，仅解密展示明文，发送时始终保持原始密文不变，手动拦截修改数据包除外。
 4. 理论上来说，本工具没有加密解密破签的说法，所有的一切均由规则驱动，所以配置规则才是用户需要做的事情
 5. 请勿将明文数据包发往 CloudX，可能会导致某些功能异常
 6. 如果规则执行不符合预期，可以在 logger 选项卡查看真实发出去的数据包
